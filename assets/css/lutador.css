@@ -122,14 +122,15 @@ header {
 
 #imgpunch {
   opacity: 0.2;
-  width: 1485px;
 }
 
 .imgFundo {
   background-position: center;
+  width: 100%;
   position: absolute;
   z-index: -1;
   padding: 1rem;
+  pointer-events: none;
 }
 .poke-img {
   width: 200px;
@@ -203,7 +204,7 @@ header {
 @media (max-width: 768px) {
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
   }
 
@@ -235,15 +236,15 @@ header {
     width: 40px;
     padding: 3px 8px;
   }
-    .imgpunch{
-
-        width: 500px;
-    }
+  #imgpunch {
+    width: 100%;
+    max-width: 768px;
+  }
 }
-@media ((min-width: 769px) and (max-width: 1024) ) {
+@media (min-width: 769px) and (max-width: 1024) {
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px;
   }
 
@@ -274,5 +275,13 @@ header {
   .poke-id {
     width: 40px;
     padding: 3px 8px;
+  }
+  #imgpunch {
+    width: 100%;
+    max-width: 1024px;
+  }
+  .imgFundo {
+    width: 100%;
+    max-width: 1024px;
   }
 }
