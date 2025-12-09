@@ -35,6 +35,20 @@ header {
   padding: 1rem;
 }
 
+.Grama{
+    background-color:#84cd8e ;
+    border-radius: 20px;
+    width: 180px;
+    display: flex;
+    gap: 18px;
+    padding: 12px;
+    justify-content: center;
+    color: #FFF3E8;
+    font-size: 15px;
+    display: flex;
+}
+#grass{
+    opacity: 0.2;
 .grama {
   background-color: #77BF80;
   border-radius: 20px;
@@ -46,6 +60,15 @@ header {
   color: #fff3e8;
   font-size: 15px;
 }
+
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 25px;
 .cards {
   /* Mantido Flexbox */
   display: flex;
@@ -64,6 +87,12 @@ header {
   transform: translateY(-5px);
 }
 
+/* .Grama {
+    background-color: #84cd8e;
+    border-radius: 18px;
+    width: 180px;
+    border-radius: 30px;
+} */
 .grama {
   background-color: #77BF80;
   border-radius: 18px;

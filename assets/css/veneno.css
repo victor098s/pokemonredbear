@@ -37,8 +37,8 @@ header {
 
 .veneno {
   background-color: #8F67D4;
-  border-radius: 20px;
-  width: 140px;
+  border-radius: 18px;
+  width: 180px;
   display: flex;
   gap: 18px;
   padding: 12px;
@@ -64,15 +64,8 @@ header {
   transform: translateY(-5px);
 }
 
-.veneno {
-  background-color: #8F67D4;
-  border-radius: 18px;
-  width: 180px;
-  border-radius: 30px;
-  object-fit: contain;
-  height: 35px;
-  display: flex;
-  align-items: center;
+#venenoimg{
+  opacity: 0.2;
 }
 
 
@@ -179,9 +172,9 @@ header {
     width: 40px;
     padding: 3px 8px;
   }
-    .imgpunch{
+    #imgven{
 
-        width: 500px;
+        display: none;
     }
 }
 @media ((min-width: 769px) and (max-width: 1024px) ) {
@@ -222,4 +215,11 @@ header {
     width: 40px;
     padding: 3px 8px;
   }
+
+      #imgven{
+
+        display: none;
+    }
+
+
 }

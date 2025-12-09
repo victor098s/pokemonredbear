@@ -112,7 +112,7 @@ a {
   margin-top: -25px;
 }
 
-container {
+.container {
   display: flex;
   justify-content: space-between;
   margin-top: 28px;
@@ -175,7 +175,7 @@ container {
     width: auto;
     max-width: 680px;
   }
-  container {
+  .container {
     display: flex;
     justify-content: center;
   }
@@ -194,7 +194,7 @@ container {
   .conteinerNurse {
     display: none;
   }
-  container {
+  .container {
     display: flex;
     justify-content: center;
   }
