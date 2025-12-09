@@ -54,9 +54,9 @@ a {
 
 .grass {
   background-color: var(--corGrass);
-width: 540px;
-    margin-top: 140px;
-    margin-left: 200px;
+  width: 540px;
+  margin-top: 140px;
+  margin-left: 200px;
   border-radius: 40px;
   font-family: var(--fontFamily);
   font-weight: var(--fontweigth);
@@ -69,8 +69,8 @@ width: 540px;
 }
 .ice {
   background-color: var(--corIce);
-width: 540px;
-    margin-left: 200px;
+  width: 540px;
+  margin-left: 200px;
   border-radius: 40px;
   font-family: var(--fontFamily);
   font-weight: var(--fontweigth);
@@ -83,8 +83,8 @@ width: 540px;
 }
 .figthing {
   background-color: var(--corFigthing);
-width: 540px;
-    margin-left: 200px;
+  width: 540px;
+  margin-left: 200px;
   border-radius: 40px;
   font-family: var(--fontFamily);
   font-weight: var(--fontweigth);
@@ -97,8 +97,8 @@ width: 540px;
 }
 .poison {
   background-color: var(--corPoison);
-width: 540px;
-    margin-left: 200px;
+  width: 540px;
+  margin-left: 200px;
   border-radius: 40px;
   font-family: var(--fontFamily);
   font-weight: var(--fontweigth);
@@ -133,14 +133,14 @@ width: 540px;
   margin-right: 100px;
 }
 .pokeBola {
-   opacity: 0.1;
+  opacity: 0.1;
 }
 .nurse {
   position: absolute;
   pointer-events: none;
   margin-bottom: -28px;
-    margin-top: -220px;
-margin-left: 50px;
+  margin-top: -220px;
+  margin-left: 50px;
 }
 
 .grassimg {
@@ -175,7 +175,6 @@ margin-left: 50px;
   a {
     display: flex;
     justify-content: space-between;
-
   }
   .conteinerNurse {
     display: none;
