@@ -85,7 +85,7 @@ body{
 /* AREA BRANCA CURVA */
 .curved-bottom {
   z-index: 1;
-  background: rgba(255, 255, 255, 0.8); 
+  background: rgba(255, 255, 255, 0.9); 
   height: 55vh;
   border-top-left-radius: 50% 30%;
   border-top-right-radius: 50% 30%;
