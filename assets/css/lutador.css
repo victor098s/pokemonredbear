@@ -55,7 +55,6 @@ header {
   position: relative;
 }
 
-
 #back {
   transition: 0.5s;
 }
@@ -140,8 +139,6 @@ header {
   display: flex;
   justify-content: center;
 }
-
-
 @media (max-width: 768px) {
   .cards {
     display: flex;
