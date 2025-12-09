@@ -162,36 +162,39 @@ container {
 }
 
 @media (max-width: 768px) {
-  .conteiner {
+  .buttons,
+  a {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
   }
   .conteinerNurse {
     display: none;
   }
-  .buttons {
-    width: auto;
-    max-width: 250px;
-  }
   header {
     width: auto;
-    max-width: 250px;
+    max-width: 680px;
+  }
+  container {
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 769px) and (max-width: 1024) {
   header {
     width: auto;
-    max-width: 250px;
-
+    max-width: 680px;
   }
-  .conteiner {
+  .buttons,
+  a {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 300px;
   }
   .conteinerNurse {
     display: none;
   }
-  .buttons {
+  container {
     display: flex;
     justify-content: center;
   }
