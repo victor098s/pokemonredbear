@@ -1,11 +1,7 @@
 const grid = document.getElementById("grid");
 
 const typeColors = {
-  fighting: "#FF6C6C",
-  steel: "#FF6C6C",
-  psychic: "#FF6C6C",
-  fire: "#FF6C6C",
-  flying: "#FF6C6C",
+  ice: "#65A4E8"
 };
 
 // Lógica de Fetch e Criação
@@ -51,7 +47,7 @@ function createCardHTML(data) {
   const typesHtml = data.types
     .map((t) => {
       const tName = t.type.name;
-      const tColor = typeColors[tName] || "#BF3434";
+      const tColor = typeColors[tName] || "#65A4E8";
       return `<span class="type-badge" style="background-color: ${tColor}">${tName}</span>`;
     })
     .join("");
@@ -66,17 +62,16 @@ function createCardHTML(data) {
         </div>
 
       <div class="card-body">
-          <div class = "alignPokeName">
+      <div class = "alignPokeName">
           <h2 class="poke-name">${name}</h2>
-          </div>
-         
+        </div>
 
           <div class="info-row">
-              <div class="info-box">
+        <div class="info-box">
                   <h4>Altura</h4>
                   <p>${height} m</p>
               </div>
-              <div class="info-box">
+        <div class="info-box">
                   <h4>Peso</h4>
                   <p>${weight} kg</p>
               </div>
@@ -90,12 +85,12 @@ function createCardHTML(data) {
               <div class="stat-line">
                   <span class="stat-label">ATK</span>
                   <span class="stat-value">${atk}</span>
-                  <div class="progress-bg">
-                      <div class="progress-fill" 
+             <div class="progress-bg">
+                      <div class="progress-fill"
                            style="width: ${Math.min(
                              atk / 2,
                              100
-                           )}%; background-color: ${color}"></div>
+                          )}%; background-color: ${color}"></div>
                   </div>
               </div>
 
@@ -103,15 +98,15 @@ function createCardHTML(data) {
                   <span class="stat-label">DEF</span>
                   <span class="stat-value">${def}</span>
                   <div class="progress-bg">
-                      <div class="progress-fill" 
+                      <div class="progress-fill"
                            style="width: ${Math.min(
                              def / 2,
                              100
-                           )}%; background-color: ${color}"></div>
-                  </div>
-              </div>
-          </div>
-      </div>
+        )}%; background-color: ${color}"></div>
+        </div>
+        </div>
+        </div>
+        </div>
       <div class = "alignPokeId">
       <span class="poke-id">#${id}</span>
       </div>
@@ -120,21 +115,48 @@ function createCardHTML(data) {
 
   // Adiciona ao grid
   grid.prepend(card);
-
+  card.style.background = "linear-gradient(to bottom, #73AEFB, #DCEDFC  )";
+  card.style.justifyContent = "center";
+  card.style.width = "100%";
+  card.style.maxWidth = "320px";
+  card.style.height = "550px";
+  card.style.padding = "1rem";
+  card.style.borderRadius = "18px";
+  card.querySelector(".poke-img").style.width = "200px";
+  card.querySelector(".alignImg").style.display = "flex";
+  card.querySelector(".alignImg").style.justifyContent = "center";
+  card.querySelector(".poke-id").style.borderRadius = "18px";
+  card.querySelector(".poke-id").style.background = "#73AEFB";
+  card.querySelector(".poke-id").style.padding = "5px";
+  card.querySelector(".poke-id").style.width = "50px";
+  card.querySelector(".poke-name").style.background = "#73AEFB";
+  card.querySelector(".poke-name").style.padding = "5px";
+  card.querySelector(".poke-name").style.width = "148px";
+  card.querySelector(".poke-name").style.borderRadius = "25px";
+  card.querySelector(".poke-name").style.textAlign = "center";
+  card.querySelector(".alignPokeName").style.display = "flex";
+  card.querySelector(".alignPokeName").style.justifyContent = "center";
+  card.querySelector(".alignPokeName").style.marginBottom = "20px";
+  card.querySelector(".alignPokeName").style.marginTop = "20px";
+  card.querySelector(".alignPokeId").style.display = "flex";
+  card.querySelector(".alignPokeId").style.justifyContent = "center";
+  card.querySelector(".poke-name").style.textTransform = "uppercase";
+  card.querySelector(".poke-name").style.fontWeight = "400";
+  // card.style.boxShadow = "-5px 2px 0px 0px rgba(0,0,0,0.2)";
 }
 
 // Inicializar Pokémons
 (async function init() {
-  await fetchAndCreateCard("scolipede");
-  await fetchAndCreateCard("beedrill");
-  await fetchAndCreateCard("weezing");
-  await fetchAndCreateCard("salazzle");
-  await fetchAndCreateCard("muk");
-  await fetchAndCreateCard("gengar");
-  await fetchAndCreateCard("toxicroak");
-  await fetchAndCreateCard("roserade");
-  await fetchAndCreateCard("nidoking");
-  await fetchAndCreateCard("tentacruel");
-  await fetchAndCreateCard("crobat");
-  await fetchAndCreateCard("arbok");
+  await fetchAndCreateCard("avalugg");
+  await fetchAndCreateCard("bergmite");
+  await fetchAndCreateCard("beartic");
+  await fetchAndCreateCard("cubchoo");
+  await fetchAndCreateCard("vanilluxe");
+  await fetchAndCreateCard("vanillish");
+  await fetchAndCreateCard("vanillite");
+  await fetchAndCreateCard("Cetoddle");
+  await fetchAndCreateCard("glastrier");
+  await fetchAndCreateCard("glaceon");
+  await fetchAndCreateCard("regice");
+  await fetchAndCreateCard("glalie");
 })();
