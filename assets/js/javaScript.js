@@ -120,33 +120,6 @@ function createCardHTML(data) {
 
   // Adiciona ao grid
   grid.prepend(card);
-  // card.style.justifyContent = "center";
-  // card.style.width = "100%";
-  // card.style.maxWidth = "320px";
-  // card.style.height = "550px";
-  // card.style.padding = "1rem";
-  // card.style.borderRadius = "40px";
-  // card.querySelector(".poke-img").style.width = "200px";
-  // card.querySelector(".alignImg").style.display = "flex";
-  // card.querySelector(".alignImg").style.justifyContent = "center";
-  // card.querySelector(".poke-id").style.borderRadius = "18px";
-  // card.querySelector(".poke-id").style.background = "#BF3434";
-  // card.querySelector(".poke-id").style.padding = "5px";
-  // card.querySelector(".poke-id").style.width = "50px";
-  // card.querySelector(".poke-name").style.background = "#BF3434";
-  // card.querySelector(".poke-name").style.padding = "5px";
-  // card.querySelector(".poke-name").style.width = "170px";
-  // card.querySelector(".poke-name").style.borderRadius = "25px";
-  // card.querySelector(".poke-name").style.textAlign = "center";
-  // card.querySelector(".alignPokeName").style.display = "flex";
-  // card.querySelector(".alignPokeName").style.justifyContent = "center";
-  // card.querySelector(".alignPokeName").style.marginBottom = "20px";
-  // card.querySelector(".alignPokeName").style.marginTop = "20px";
-  // card.querySelector(".alignPokeName").style.color = "#FFF3E8";
-  // card.querySelector(".alignPokeId").style.display = "flex";
-  // card.querySelector(".alignPokeId").style.justifyContent = "center";
-  // card.querySelector(".poke-name").style.textTransform = "uppercase";
-  // card.querySelector(".poke-name").style.fontWeight = "400";
 }
 
 // Inicializar Pokémons
@@ -164,6 +137,3 @@ function createCardHTML(data) {
   await fetchAndCreateCard("cobalion");
   await fetchAndCreateCard("lucario");
 })();
-
-
-//  <div class="types">${typesHtml}</div>
