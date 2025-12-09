@@ -67,7 +67,6 @@ header {
 
 .gelo {
   background-color: #65a4e8;
-  border-radius: 18px;
   width: 180px;
   border-radius: 30px;
   object-fit: contain;
@@ -79,7 +78,7 @@ header {
 .pokemon-card {
   transition: 0.5s;
   color: #ffffff;
-  background: linear-gradient(to bottom, #65a4e8, #65a4e8);
+  background: linear-gradient(to bottom, #65a4e8, #DCEDFC);
   justify-content: center;
   width: 100%;
   max-width: 320px;
