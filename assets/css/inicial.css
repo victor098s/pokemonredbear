@@ -29,13 +29,13 @@ body{
 
 /* POKEBOLA */
 .pokeball-wm{
-  position:absolute;
-  right:-5%;
-  top:-5%;
-  width:80vmin;
-  height:80vmin;
-  opacity:0.12;
-  pointer-events:none;
+    position: absolute;
+    right: -5%;
+    top: -5%;
+    width: 100vmin;
+    height: 100vmin;
+    opacity: 0.12;
+    pointer-events: none;
 }
 
 /* HEADER */
@@ -123,3 +123,12 @@ body{
   .logo .avatar{width:60px;height:60px;}
   .brand{font-size:16px;}
   .curved-bottom{
+    height:40vh;
+    width: 140%;
+    margin-left: -20%;
+  }
+  .btn-tipos{
+    font-size:16px;
+    padding:12px 20px;
+  }
+}
