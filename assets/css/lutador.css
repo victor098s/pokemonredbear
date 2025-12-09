@@ -203,12 +203,14 @@ header {
 
 @media (max-width: 768px) {
   .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
   }
 
   .pokemon-card {
+    flex: 1 1 calc(50% - 40px);
     width: 100%;
     height: auto;
     padding: 0.8rem;
@@ -237,18 +239,19 @@ header {
     padding: 3px 8px;
   }
   #imgpunch {
-    width: 100%;
-    max-width: 768px;
+    display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 1024) {
   .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
   }
 
   .pokemon-card {
+    flex: 1 1 calc(50% - 40px);
     width: 100%;
     height: auto;
     padding: 0.8rem;
@@ -277,11 +280,6 @@ header {
     padding: 3px 8px;
   }
   #imgpunch {
-    width: 100%;
-    max-width: 1024px;
-  }
-  .imgFundo {
-    width: 100%;
-    max-width: 1024px;
+    display: none;
   }
 }
