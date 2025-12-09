@@ -36,15 +36,17 @@ header {
 }
 
 .veneno {
-  background-color: #8F67D4;
-  border-radius: 18px;
-  width: 180px;
   display: flex;
-  gap: 18px;
+  justify-content: space-between;
+  background-color: #9A51C5;
+  width: 180px;
+  border-radius: 30px;
+  object-fit: contain;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  color: var(--colorFonte);
   padding: 12px;
-  justify-content: center;
-  color: #fff3e8;
-  font-size: 15px;
 }
 .cards {
   /* Mantido Flexbox */

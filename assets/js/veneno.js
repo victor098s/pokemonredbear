@@ -1,18 +1,7 @@
 const grid = document.getElementById("grid");
 
 const typeColors = {
-  fighting: "#FF6C6C",
-  steel: "#A8A8C0",
-  psychic: "#F85888",
-  fire: "#F08030",
-  flying: "#A890F0",
-  poison: "#A33EA1", 
-  bug: "#A8B820",    
-  water: "#6890F0",  
-  dark: "#705848",   
-  ghost: "#705898",  
-  grass: "#78C850",  
-  ground: "#E0C068", 
+  poison: "#A33EA1"
 };
 
 async function fetchAndCreateCard(pokemon) {
