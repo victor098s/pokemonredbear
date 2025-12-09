@@ -130,10 +130,10 @@ width: 540px;
   position: relative;
   z-index: -1;
   margin-top: 70px;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 .pokeBola {
-   opacity: 0.2;
+   opacity: 0.1;
 }
 .nurse {
   position: absolute;
@@ -147,7 +147,7 @@ margin-left: 50px;
   opacity: 0.2;
 }
 .iceimg {
-  opacity: 0.2;
+  opacity: 0.6;
 }
 .venenoimg {
   opacity: 0.2;
