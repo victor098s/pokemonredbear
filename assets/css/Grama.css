@@ -28,17 +28,24 @@ header{
     padding: 1rem;
 }
 
-.grama{
-    background-color:#abffaf ;
+.Grama{
+    background-color:#84cd8e ;
     border-radius: 20px;
-    width: 140px;
+    width: 180px;
     display: flex;
     gap: 18px;
     padding: 12px;
     justify-content: center;
     color: #FFF3E8;
     font-size: 15px;
+    display: flex;
 }
+#grass{
+    opacity: 0.2;
+}
+
+
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -58,12 +65,12 @@ header{
 
 }
 
-.grama {
+/* .Grama {
     background-color: #84cd8e;
     border-radius: 18px;
     width: 180px;
     border-radius: 30px;
-}
+} */
 
 .pokemon-card{
     transition: 0.5s;

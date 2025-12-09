@@ -54,35 +54,7 @@ header {
   gap: 25px;
   position: relative;
 }
-/* .card{
-    background: linear-gradient(rgb(190, 13, 13), rgb(243, 53, 53), rgb(225, 184, 184));
-    width: 300px;
-    height: 420px;
-    display: flex;
-    justify-content: center;
-    border-radius: 16px;
 
-} */
-
-/* #lut{
-    transition: 0.5s;
-}
-
-#lut:hover {
-
-    transform: translateY(-5px);
-
-}
-
-#punch{
-    transition: 0.5s;
-}
-
-#punch:hover {
-
-    transform: translateY(-5px);
-
-} */
 
 #back {
   transition: 0.5s;
@@ -169,37 +141,6 @@ header {
   justify-content: center;
 }
 
-/* @media (max-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .pokemon-card {
-    width: 200px;
-    height: 300px;
-  }
-
-    .lutador{
-        height: 28px;
-    }
-
-    .alignImg{
-
-        width: 50px;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .alignPokeName{
-
-        width: 60px;
-
-    }
-
-} */
 
 @media (max-width: 768px) {
   .cards {

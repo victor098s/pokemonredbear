@@ -62,7 +62,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 2px 10px 5px 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .ice {
   background-color: var(--corIce);
@@ -75,7 +75,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 2px 10px 5px 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .figthing {
   background-color: var(--corFigthing);
@@ -88,7 +88,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 2px 10px 5px 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .poison {
   background-color: var(--corPoison);
@@ -102,7 +102,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 2px 10px 5px 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .imgbuttons {
@@ -112,7 +112,7 @@ a {
   margin-top: -25px;
 }
 
-container {
+.container {
   display: flex;
   justify-content: space-between;
   margin-top: 28px;
@@ -175,7 +175,7 @@ container {
     width: auto;
     max-width: 680px;
   }
-  container {
+  .container {
     display: flex;
     justify-content: center;
   }
@@ -194,7 +194,7 @@ container {
   .conteinerNurse {
     display: none;
   }
-  container {
+  .container {
     display: flex;
     justify-content: center;
   }
