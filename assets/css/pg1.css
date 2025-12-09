@@ -1,5 +1,5 @@
 :root{
-  --pink: #d90a4b;   /* fundo principal (ajuste fino para ficar igual) */
+  --pink: #d90a4b;
   --pink-dark: #c40a44;
   --white: #f4f4f4;
   --text-white: #ffffff;
@@ -14,37 +14,31 @@ body{
   font-family:var(--font);
   background:var(--pink);
   color:var(--text-white);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
 }
 
-/* container principal - ocupa viewport inteiro */
+/* CONTAINER PRINCIPAL */
 .hero{
-    max-height: 103%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    padding: 40px 60px;
-
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 60px;
 }
 
-/* marca-d'água pokeball */
+/* POKEBOLA */
 .pokeball-wm{
   position:absolute;
-  right:-1%;
-  top: -1%;
-  width:65vmin;            /* grande e cortada como no mockup */
+  right:-5%;
+  top:-5%;
+  width:80vmin;
+  height:80vmin;
   opacity:0.12;
-  width: 100vmin  ;
- height: 100vmin;
   pointer-events:none;
-  transform:rotate(0deg);
 }
 
-/* header / logo */
+/* HEADER */
 .site-header{z-index:2}
 .logo{
   display:flex;
@@ -52,86 +46,80 @@ body{
   gap:14px;
 }
 .logo .avatar{
-  width:180px;
-  height:180px;
+  width:120px;
+  height:120px;
   border-radius:50%;
   object-fit:cover;
-
 }
 .brand{
   font-weight:700;
   font-size:20px;
- margin-left: -34px;
 }
 
-/* texto principal à esquerda */
-.content{z-index:2; max-width:520px}
+/* TEXTO */
+.content{
+  z-index:2;
+  max-width:520px;
+}
 .headline{
-     font-size: 65px;
-    line-height: 0.98;
-    margin: 5px 0 0 0;
-    font-weight: 700;
-    letter-spacing: 0px;
+  font-size: clamp(32px, 8vw, 68px);
+  line-height: 1;
+  margin: 0;
+  font-weight: 700;
 }
 
-/* área branca curva inferior */
+/* AREA BRANCA CURVA */
 .curved-bottom{
-        z-index: -12;
-    background: var(--white);
-    height: 986px;
-    border-top-left-radius: 480px;
-    border-top-right-radius: 480px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 -6px 18px var(--shadow);
-    position: relative;
-    margin-top: -34px;
-    border-radius: 79%;
-    width: 137%;
-    margin-left: -185px;
+  z-index:1;
+  background: var(--white);
+  height: 55vh;
+  border-top-left-radius: 50% 30%;
+  border-top-right-radius: 50% 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -6px 18px var(--shadow);
+  position: relative;
+  width: 130%;
+  margin-left: -15%;
 }
 
-/* botão central - estilo pílula com ícone circular à direita */
+/* BOTÃO */
 .btn-tipos{
-           margin-top: 120px;
-    z-index: 100;
-    display: inline-flex;
-    align-items: center;
-    gap: 353px;
-    margin-bottom: 600px;
-    background: var(--pink-dark);
-    color: #fff;
-    text-decoration: none;
-    padding: 16px 36px;
-    border-radius: 60px;
-    font-weight: 500;
-    font-size: 20px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-    transform: translateY(6px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--pink-dark);
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  width: min(90%, 320px);
 }
 
-.btn-tipos span.circle-icon{
-  display:inline-block;
+.btn-tipos .circle-icon{
   width:22px;
   height:22px;
   border-radius:50%;
   background:#fff;
-  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.06);
-  margin-left:6px;
-  border:3px solid rgba(255,255,255,0.0);
 }
 
-/* responsividade */
+/* ==== RESPONSIVO ==== */
+
+/* TABLET */
 @media (max-width:900px){
-  .headline{font-size:40px}
-  .pokeball-wm{width:90vmin; right:-18%; top:-20%}
-  .curved-bottom{height:180px}
+  .hero{padding:30px;}
+  .logo .avatar{width:90px;height:90px;}
+  .curved-bottom{height:45vh;}
 }
+
+/* CELULAR */
 @media (max-width:520px){
-  .hero{padding:20px}
-  .logo .avatar{width:44px;height:44px}
-  .headline{font-size:34px}
-  .curved-bottom{height:160px;border-top-left-radius:110px;border-top-right-radius:110px}
-  .btn-tipos{font-size:16px;padding:12px 24px}
-}
+  .hero{padding:20px;}
+  .logo .avatar{width:60px;height:60px;}
+  .brand{font-size:16px;}
+  .curved-bottom{
