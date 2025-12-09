@@ -43,7 +43,7 @@ header {
   display: flex;
   gap: 18px;
   padding: 12px;
-  justify-content: center;
+  justify-content: space-between;
   color: #fff3e8;
   font-size: 15px;
 }
